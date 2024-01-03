@@ -1,7 +1,12 @@
+import "./Location.css"
 import GoogleMap from 'google-maps-react-markers';
 import PopoutMarker from '../parts/PopoutMarker.js';
+import { useLayoutEffect, useRef } from 'react';
 
 function Location() {
+    const map = useRef(null);
+
+    // default props for google map
     const defaultProps = {
         options: {
             clickableIcons: false,
@@ -13,18 +18,31 @@ function Location() {
             lng: -81.27361
         },
         zoom: 9,
-        key: process.env.REACT_APP_GOOGLE_MAPS_KEY
+        /* Disable the map until back, work on the layout with comments and styles
+        solve how to use maps api without backend */
+        // key: process.env.REACT_APP_GOOGLE_MAPS_KEY
     };
-     
+
+    // dynamic height resizing for map - maintains ratio based on current map width
+    useLayoutEffect(() => {
+        function updateSize() {
+            if (map.current) {
+                map.current.style.height = `${map.current.offsetWidth * 0.546}px`;
+            }
+        }
+        window.addEventListener('resize', updateSize);
+        updateSize();
+        return () => window.removeEventListener('resize', updateSize);
+      }, []);
+    
     return (
-        <div style={{padding: '40px 0px 90px 0px', rowGap: '14px', display: 'flex', flexDirection: 'column', width: '100%', alignItems: 'center', background: 'white'}}>
-            <div style={{position: 'relative', height: 140}}>
-                <img src={require('../images/banner.png')} alt='banner' width='300' style={{position: 'absolute', top: '50%', left: '50%', transform: 'translateX(-50%) translateY(-50%)', Index: 2}}></img>
-                {/* add "Locations text directly into the image and crop image" */}
-                <p style={{color: 'black', fontSize: '35px', position: 'absolute', top: '20%', left: '50%', transform: 'translateX(-50%) translateY(-50%)', zIndex: 1}}>Locations</p>
+        <div id="container">
+            <div id="header">
+                <img id="headerImage" src={require('../images/banner.png')} alt='banner' width='371'></img>
+                <p id="headerText">Locations</p>
             </div>
-            <div style={{ width: '80vw' }}>
-                <p style={{color: 'black', fontSize: '24px'}}>
+            <div id="body">
+                <p>
                     Over the past year, we have successfully expanded our services beyond London and the Toronto Region. 
                     We have established operations in additional areas, including Montreal, Guelph, St. Catharines, and Boston, US. 
                     In each of these regions, we have dedicated mini teams working diligently to collect and distribute sports equipment. 
@@ -32,7 +50,7 @@ function Location() {
                     Our expansion reflects our commitment to providing accessible and high-quality sporting goods to a wider audience.
                 </p>
             </div>
-            <div style={{marginTop: '40px', height: '70vh', width: '65vw', alignItems: 'center', justifyContent: 'center', border: 'solid', borderWidth: 1, borderColor: 'black', padding: '30px'}}>
+            <div id="map" ref={map}>
                 <GoogleMap
                     apiKey={defaultProps.key}
                     defaultCenter={defaultProps.center}

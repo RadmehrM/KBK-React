@@ -1,0 +1,62 @@
+:root {
+    --fontColor_Dark: black;
+    --fontColor_Medium: grey;
+    --fontSize_Large: 35px;
+    --fontSize_Medium: 24px;
+    --fontSize_Small: 10px;
+}
+
+p {
+ color: var(--fontColor_Dark);
+ font-size: var(--fontSize_Medium);
+ font-family: 'Inter';
+}
+
+#container {
+    padding: 40px 0px 90px 0px;
+    row-gap: 40px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 3000px;
+    align-items: center;
+    background-color: white;
+}
+
+#header {
+    position: relative;
+    height: 140px;
+}
+
+#headerImage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+#headerText {
+    font-size: var(--fontSize_Large);
+    font-weight: 600;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+#body {
+    width: 86%;
+    font-weight: 500;
+}
+
+#map {
+    margin-top: 50px;
+    height: calc(70vw * 0.546); /*backup for js dynamic sizing (ratio from figma)*/
+    width: 70%;
+    align-items: center;
+    justify-content: center;
+    border: solid;
+    border-width: 1px;
+    border-color: var(--fontColor_Dark);
+    padding: 36px;
+}
