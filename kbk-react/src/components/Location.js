@@ -7,6 +7,8 @@ import { useLayoutEffect, useRef } from 'react';
 Notes:
     - Add the api key as an environment varaible in the hosting service for protection
     - Disable the map until back, work on the layout with comments and styles
+    - Since ellipses are absolutely positioned, their current position is different
+    compared to the expected one. Once the header and footers are added in this should be fixed.
 */
 
 function Location() {
@@ -41,6 +43,10 @@ function Location() {
     
     return (
         <div id="container">
+            <div className="ellipse" id="ellipse-11"></div>
+            <div className="ellipse" id="ellipse-12"></div>
+            <div className="ellipse" id="ellipse-13"></div>
+            <div className="ellipse" id="ellipse-14"></div>
             <div id="header">
                 <img id="headerImage" src={require('../images/banner.png')} alt='banner' width='371'></img>
                 <p id="headerText">Locations</p>

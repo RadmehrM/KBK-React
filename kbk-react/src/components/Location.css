@@ -52,12 +52,59 @@ p {
 
 #map {
     margin-top: 50px;
-    height: calc(70vw * 0.546); /*backup for js dynamic sizing (ratio from figma)*/
-    width: 70%;
+    height: calc(74vw * 0.546);  /* backup for js dynamic sizing (ratio from figma) */
+    width: 74%; 
     align-items: center;
     justify-content: center;
     border: solid;
     border-width: 1px;
     border-color: var(--fontColor_Dark);
     padding: 36px;
+    z-index: 2;
+}
+
+.ellipse {
+    background-color: #F5F5F5;
+    border-radius: 50%;
+    z-index: 1;
+    position: absolute;
+}
+
+#ellipse-14 {
+    width: 101px;
+    height: 101px;
+
+    /* change */
+    top: 653px;
+    left: 1400px;
+}
+
+#ellipse-11 {
+    width: 265px;
+    height: 265px;
+
+    /* change */
+    top: 1319px;
+    left: -49px;
+    
+}
+
+#ellipse-12 {
+    width: 133px;
+    height: 133px;
+    
+    /* change */
+    top: 1156px;
+    left: 125px;
+    
+
+}
+
+#ellipse-13 {
+    width: 205px;
+    height: 205px;
+
+    /* change */
+    top: 1072px;
+    left: 1337px;
 }
