@@ -22,3 +22,23 @@
     border-radius: 50%;
 }
 
+.timelineContainer {
+    margin: 0 auto;
+    display: grid;
+    height: 1059px;
+    width: 1297px;
+    background-color: yellow;
+    grid-template-columns: 2px 2fr 1fr;
+    padding-left: 215px;
+}
+
+.timeline{
+    background-color: black;
+    width: 2px;
+    height: 755px;
+}
+.timelineImages{
+}
+TimelineItems {
+    position: relative;
+}

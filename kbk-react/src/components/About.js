@@ -31,11 +31,9 @@ function TimelineItems({ items }){
 
 function About(){
     return (
-        <div>
-            <div className="timelineContainer">
-                <div className="timeline"></div>
-                <TimelineItems items={items}/>
-            </div>
+        <div className="timelineContainer">
+            <div className="timeline"></div>
+            <TimelineItems items={items}/>
             <div className='timelineImages'>
                 <img className="image1" src={image1}></img>
                 <img className="image2" src={image2}></img>
