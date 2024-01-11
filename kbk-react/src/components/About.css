@@ -12,33 +12,60 @@
     font-weight: 400;
     font-size: 24px;
     line-height: 29.05px;
+    transform: translateY(-20%);
 }
 
 .timelineIcon {
-    position: absolute;
+    position: relative;
     width: 20px;
     height: 20px;
     border: 2px solid black;
     border-radius: 50%;
+    left: -1px;
+    transform: translateX(-50%);
+    top: 1px;
+    background-color: white;
 }
+/* .timelineIcon0{
+    top: 46px;
+}
+.timelineIcon1{
+    top: 262px;
+}
+.timelineIcon2{
+    top: 478px;
+}
+.timelineIcon3{
+    top: 821px;
+} */
 
 .timelineContainer {
     margin: 0 auto;
     display: grid;
-    height: 1059px;
+    height: 905px;
     width: 1297px;
     background-color: yellow;
     grid-template-columns: 2px 2fr 1fr;
     padding-left: 215px;
+    padding-top: 27px;
+    padding-bottom: 127px;
 }
 
 .timeline{
     background-color: black;
     width: 2px;
-    height: 755px;
+    height: 754px;
 }
 .timelineImages{
 }
-TimelineItems {
-    position: relative;
+.timelineItems {
+    display: flex;
+    height: ;
+    flex-direction: column;
+    justify-content: space-between;
 }
+
+.timelineItem{
+    display: flex;
+}
+
