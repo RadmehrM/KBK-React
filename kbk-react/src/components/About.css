@@ -1,2 +1,24 @@
+.image1 {
+    width: 319px;
+    height: 319px;
+}
+.image2 {
+    width: 314px;
+    height: 418px;
+}
 
+.timelineContent {
+    width: 641px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29.05px;
+}
+
+.timelineIcon {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 2px solid black;
+    border-radius: 50%;
+}
 

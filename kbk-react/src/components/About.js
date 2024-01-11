@@ -37,8 +37,8 @@ function About(){
                 <TimelineItems items={items}/>
             </div>
             <div className='timelineImages'>
-                <img src={image1}></img>
-                <img src={image2}></img>
+                <img className="image1" src={image1}></img>
+                <img className="image2" src={image2}></img>
             </div>
         </div>
     )
