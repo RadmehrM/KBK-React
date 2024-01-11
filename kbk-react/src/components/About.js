@@ -9,7 +9,7 @@ const items = ["Kids being Kids is founded by two dedicates students, Ben Lamber
 
 function TimelineItem({ description, index }){
     return (
-        <div className={`timelineItem timelineItem-${index}`}>
+        <div className={`timelineItem timelineItem${index}`}>
             <div className='timelineIcon'></div>
             <div className="timelineContent">
                 {description}
