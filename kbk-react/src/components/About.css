@@ -32,11 +32,15 @@
     display: grid;
     height: 905px;
     width: 1297px;
-    background-color: yellow;
     grid-template-columns: 2px 2fr 1fr;
     padding-left: 215px;
     padding-top: 27px;
     padding-bottom: 127px;
+}
+.timelineHeader {
+    margin: 0 auto;
+    height: 235px;
+    width: 1512px;
 }
 
 .timeline{
@@ -57,5 +61,20 @@
 
 .timelineItem{
     display: flex;
+}
+
+.headerText {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 43.57px;
+    letter-spacing: 5%;
+    padding: 119px 0 0 204px;
+}
+
+.underline {
+    position: relative;
+    left: 195px;
+    top: -70px;
+    width: 225px;
 }
 
