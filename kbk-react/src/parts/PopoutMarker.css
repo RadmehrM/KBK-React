@@ -1,0 +1,46 @@
+:root {
+    --fontColor_Dark: black;
+    --fontColor_Medium: grey;
+    --fontSize_Large: 35px;
+    --fontSize_Medium: 24px;
+    --fontSize_Small: 10px;
+}
+
+p {
+    color: var(--fontColor_Dark);
+    font-size: var(--fontSize_Medium);
+    font-family: 'Inter';
+   }
+
+#container-marker {
+    position: relative;
+    width: 0px;
+    height: 0px;
+}
+
+#detailed {
+    position: absolute;
+    z-index: 2;
+    background-color: cyan;
+    top: -240px;
+    left: -130px;
+}
+
+#learnmore {
+    display: inline-flex;
+    column-gap: 10px;
+    align-items: center;
+    color: var(--fontColor_Medium);
+    font-size: 18px;
+}
+
+#learnmore p {
+    color: var(--fontColor_Medium);
+}
+
+#pin {
+    position: absolute;
+    z-index: 1;
+    color: red;
+    font-size: 36px;
+}
