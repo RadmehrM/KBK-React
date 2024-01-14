@@ -1,4 +1,5 @@
 import './App.css';
+import About from './components/About.js'
 
 import Location from './components/Location.js';
 
@@ -7,6 +8,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <Location/>
+        <About/>
         {/* <img src={logo} className="App-logo" alt="logo" /> */}
         {/* <>
         <p>
