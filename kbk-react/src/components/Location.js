@@ -1,30 +1,16 @@
 import "./Location.css"
-import GoogleMap from 'google-maps-react-markers';
+import Map, {Marker} from 'react-map-gl';
 import PopoutMarker from '../parts/PopoutMarker.js';
-import { useLayoutEffect, useRef } from 'react';
+import { useLayoutEffect, useRef, useState } from 'react';
+import 'mapbox-gl/dist/mapbox-gl.css';
 
 /*
 Notes:
+    - Might be better to allow map to change aspect ratio at certain width breakpoint (mobiles)
     - Add the api key as an environment varaible in the hosting service for protection
-    - Disable the map until back, work on the layout with comments and styles
 */
 
 function Location() {
-    // default props for google map
-    const defaultProps = {
-        options: {
-            clickableIcons: false,
-            disableDefaultUI: true,
-            zoomControl: true
-        },
-        center: {
-            lat: 43.009953,
-            lng: -81.27361
-        },
-        zoom: 9,
-        // key: process.env.REACT_APP_GOOGLE_MAPS_KEY
-    };
-
     // dynamic height resizing for map - maintains ratio based on current map width
     const mapRef = useRef(null);
 
@@ -37,8 +23,38 @@ function Location() {
         window.addEventListener('resize', updateSize);
         updateSize();
         return () => window.removeEventListener('resize', updateSize);
-      }, []);
+    }, []);
     
+    // dynamic marker loading for map - loads if marker coords within map bounds
+    const markers = [
+        {
+            longitude: -81.27361,
+            latitude: 43.009953,
+            text:'Western University',
+            image:'school.png',
+        }
+    ]
+
+    const [visibleMarkers, setVisibleMarkers] = useState();
+
+    const mboxRef = useRef();
+
+    const filterMarkers = () => {
+        const {_ne: {lng: ne_lng, lat: ne_lat}, _sw: {lng: sw_lng, lat: sw_lat}} = mboxRef.current.getMap().getBounds();
+
+        setVisibleMarkers(markers.filter((marker) => (
+           marker.latitude > sw_lat && marker.latitude < ne_lat && marker.longitude < ne_lng && marker.longitude > sw_lng
+        )))
+    }
+
+    // map overflow handeling to clean up markers when not hovered
+    const [mapOverflow, setMapOverflow] = useState('hidden');
+    
+    const handleMapOverflow = (data) => {
+        setMapOverflow(data);
+    }
+
+    // rendered component
     return (
         <div id="container">
             <div id="header">
@@ -54,30 +70,34 @@ function Location() {
                     Our expansion reflects our commitment to providing accessible and high-quality sporting goods to a wider audience.
                 </p>
             </div>
-            <div id="map" ref={mapRef}>
-                
-                {/* Testing PopoutMarker without map */}
-                <PopoutMarker
-                    lat={43.009953}
-                    lng={-81.27361}
-                    text={'Western University'}
-                    image={'school.png'}
-                />
-
-
-                {/* <GoogleMap
-                    apiKey={defaultProps.key}
-                    defaultCenter={defaultProps.center}
-                    defaultZoom={defaultProps.zoom}
-                    options={defaultProps.options}
+            <div id="map" ref={mapRef} style={{overflow: mapOverflow}}>    
+                <Map
+                    ref={mboxRef}
+                    onLoad={filterMarkers}
+                    onResize={filterMarkers}
+                    onMove={filterMarkers}
+                    mapboxAccessToken={process.env.REACT_APP_MAP_KEY}
+                    initialViewState={{
+                        longitude: -81.27361,
+                        latitude: 43.009953,
+                        zoom: 7
+                    }}
+                    mapStyle="mapbox://styles/mapbox/streets-v9"
+                    style={{overflow: mapOverflow}}
                 >
-                    <PopoutMarker
-                        lat={43.009953}
-                        lng={-81.27361}
-                        text={'Western University'}
-                        image={'school.png'}
-                    />
-                </GoogleMap> */}
+                    {visibleMarkers && visibleMarkers.map((marker) => {
+                        return (
+                            <Marker key={marker} longitude={marker.longitude} latitude={marker.latitude} anchor="bottom" >
+                                <PopoutMarker
+                                    text={marker.text}
+                                    image={marker.image}
+                                    link={'temp'}
+                                    handleMapOverflow={handleMapOverflow}
+                                />
+                            </Marker>
+                        )
+                    })}
+                </Map>
             </div>
         </div>
     );
