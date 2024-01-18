@@ -1,7 +1,7 @@
 import "./Location.css"
 import GoogleMap from 'google-maps-react-markers';
 import PopoutMarker from '../parts/PopoutMarker.js';
-import { useLayoutEffect, useRef } from 'react';
+import React, { useLayoutEffect, useRef } from 'react';
 
 /*
 Notes:
