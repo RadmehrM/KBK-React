@@ -1,6 +1,6 @@
 import './App.css';
 import About from './components/About.js'
-
+import Team from './components/Team.js'
 import Location from './components/Location.js';
 
 function App() {
@@ -9,6 +9,7 @@ function App() {
       <header className="App-header">
         <Location/>
         <About/>
+        <Team/>
         {/* <img src={logo} className="App-logo" alt="logo" /> */}
         {/* <>
         <p>
