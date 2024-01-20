@@ -4,6 +4,7 @@ import { FaMapMarkerAlt, FaArrowRight } from "react-icons/fa";
 
 /*
 Notes:
+    - additional markers stay above detailed section on map
     - set up link with learnmore button
     - Adjust image width to scale with thin display
     - Clean text formatting inside of detailed

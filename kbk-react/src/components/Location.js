@@ -32,7 +32,13 @@ function Location() {
             latitude: 43.009953,
             text:'Western University',
             image:'school.png',
-        }
+        },
+        // {
+        //     longitude: -81.28361,
+        //     latitude: 43.809953,
+        //     text:'Western University',
+        //     image:'school.png',
+        // }
     ]
 
     const [visibleMarkers, setVisibleMarkers] = useState();
