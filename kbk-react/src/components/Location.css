@@ -51,15 +51,23 @@ p {
 
 #map {
     margin-top: 50px;
-    height: calc(74vw * 0.546);  /* backup for js dynamic sizing (ratio from figma) */
+    /*height: calc(74vw * 0.546);  /* backup for js dynamic sizing (ratio from figma) */
     width: 74%; 
     align-items: center;
     justify-content: center;
     border: solid;
     border-width: 1px;
     border-color: var(--fontColor_Dark);
-    padding: 36px;
     z-index: 2;
+    padding: 3%;
+}
+
+#map-image {
+    background: url("../images/map.png"); /* set map as background image */
+    box-sizing: border-box;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
 }
 
 .ellipse {
