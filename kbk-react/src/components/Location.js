@@ -1,6 +1,6 @@
 import "./Location.css";
 import { useLayoutEffect, useRef } from "react";
-import mapImage from "../images/map.png";
+import PopoutMarker from "../parts/PopoutMarker";
 
 /*
 Notes:
