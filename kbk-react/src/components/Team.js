@@ -1,7 +1,7 @@
 import React from 'react';
 import './Team.css';
 
-const YourComponent = () => {
+const Team = () => {
   return (
     <div className="container">
       <h1>Your Component</h1>
@@ -14,4 +14,4 @@ const YourComponent = () => {
   );
 };
 
-export default YourComponent;
+export default Team;
