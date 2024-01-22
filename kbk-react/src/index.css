@@ -5,9 +5,164 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.root {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  padding: 0%;
+  position: absolute;
+  overflow: hidden;
+
+}
+
+.navBar{
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 2.5em;
+  font-weight: 500;
+  font-size: 20px;
+  background-color: white;
+  padding: 1.2em;
+  margin: 0;
+  z-index: 1;
+}
+.KBKLOGO{
+  width: 100%;
+  background-color:#FF6B00;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+.startBanner{
+  margin: 0;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90vh;
+  background-image: url(./images/kelly-sikkema-xLA0FyK2nyA-unsplash.jpg);
+  background-size:cover;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  
+}
+
+.container {
+  margin: 0;
+  text-align: center;
+}
+
+.root-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.headline {
+  width: 40%;
+  height: 30%;
+}
+
+.headline p {
+  font-size: 50px;
+  color: white;
+  font-weight: 500;
+  position: relative;
+  z-index: 1;
+}
+
+.box {
+  position:absolute;
+  left: 60%;
+  bottom:-33%;
+  width: 100%;
+  height: 160%;
+  background-color: black;
+  opacity: 20%;
+  transform: rotate(10deg);
+}
+
+.mission {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 60vh;
+  z-index: 1;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  gap: 0em;
+}
+
+.mission-title {
+  width: 30vw;
+}
+
+.mission h1 {
+  font-size: 3em;
+  font-weight: 600;
+}
+
+.mission-box {
+  width: 30vw;
+  margin: -2.5em;
+  padding: 0;
+
+}
+
+.mission .mission-box p {
+  font-size: 1.5em;
+}
+
+.circle {
+  width: 60vw;
+  height: 80vh;
+  position: absolute;
+  bottom: -25%;
+}
+
+.stats {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+}
+
+.stat {
+  width: 33.333%;
+  height: 100%;
+  background-color: #FF6B00;
+}
+
+#statA {
+  background-color: #FF9E89;
+}
+
+#statB {
+  background-color: #FB876E;
+
+}
+#statC {
+  background-color: #FF7253;
+  ;
 }
