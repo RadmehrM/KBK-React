@@ -1,3 +1,38 @@
+.header{
+    display: flex;
+    flex-direction: column;
+}
+#about-title{
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 6rem;
+}
+
+.about-text{
+    font-size: 20px;
+    font-weight: 600;
+    color: azure;
+
+}
+
+.about-disp-box{
+    background-image: url(../images/about-bg.png);
+    width: 90%;
+    height: 70vh;
+    position: relative;
+    text-wrap: wrap;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.about-text-box{
+    width: 58%;
+    margin: auto;
+    padding: none;
+}
+
+
 .image1 {
     width: 319px;
     height: 319px;

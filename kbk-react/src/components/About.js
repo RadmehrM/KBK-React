@@ -33,6 +33,24 @@ function TimelineItems({ items }){
 function About(){
     return (
         <div>
+            
+            <div className='header'>
+                <div className='about-disp-box'>
+                    <h1 id='about-title'>About Us</h1>
+                    <div className='about-text-box'>
+                        <p id='about-head1' className='about-text'>The Kids being Kids Organization was founded by two dedicated students from Western University, Ben Lambert and Adam Cohen, 
+                            who share a common goal of giving back to their community. Recognizing the tremendous impact that sports can have on a child's life, 
+                            they firmly believe that every child should have the opportunity to experience the joy, camaraderie, 
+                            and personal growth that come with participating in sports, regardless of their economic circumstances.</p>
+                        <p id='about-head1' className='about-text'>Motivated by their own experiences and the support they received from their community, Ben and Adam decided to harness the power of their local 
+                            community and extend the same opportunities to the next generation of athletes. 
+                            They rallied their community members, including fellow students, families, and local businesses, to join their cause.</p>
+                    </div>
+                    
+                </div>
+                
+
+            </div>
             <div className="timelineHeader">
                 <div className="headerText">Timeline . . .</div>
                 <img className="underline" src={underline}/>
