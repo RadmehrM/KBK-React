@@ -115,3 +115,19 @@ p {
     top: 1072px;
     left: 1337px;
 }
+
+.marker {
+    max-width: 31.5px;
+    max-height: 45px;
+    position: relative;
+}
+
+#oshawa {
+    left: 14.6%;
+    top: 15%;
+}
+
+#guelph {
+    left: -14%;
+    top: 33%;
+}

@@ -1,19 +1,28 @@
 import "./Location.css";
 import { useLayoutEffect, useRef } from "react";
 
-/*
-Notes:
-    - replace map with images
-*/
-
 function Location() {
-  // dynamic height resizing for map - maintains ratio based on current map width
+  // dynamic height resizing for map/markers - maintains ratio based on current map width
   const mapRef = useRef(null);
+  const markerRef = useRef(null);
+  const markerRef2 = useRef(null);
 
   useLayoutEffect(() => {
     function updateSize() {
-      if (mapRef.current) {
+      if (mapRef.current && markerRef.current && markerRef2.current) {
         mapRef.current.style.height = `${mapRef.current.offsetWidth * 0.546}px`;
+        markerRef.current.style.width = `${
+          mapRef.current.offsetWidth * 0.03
+        }px`;
+        markerRef.current.style.height = `${
+          markerRef.current.offsetWidth * 1.429
+        }px`;
+        markerRef2.current.style.width = `${
+          mapRef.current.offsetWidth * 0.03
+        }px`;
+        markerRef2.current.style.height = `${
+          markerRef2.current.offsetWidth * 1.429
+        }px`;
       }
     }
     window.addEventListener("resize", updateSize);
@@ -51,7 +60,22 @@ function Location() {
         </p>
       </div>
       <div id="map" ref={mapRef}>
-        <div id="map-image"></div>
+        <div id="map-image">
+          <img
+            src={require("../images/marker.png")}
+            alt=""
+            className="marker"
+            id="oshawa"
+            ref={markerRef}
+          />
+          <img
+            src={require("../images/marker.png")}
+            alt=""
+            className="marker"
+            id="guelph"
+            ref={markerRef2}
+          />
+        </div>
       </div>
     </div>
   );
