@@ -1,6 +1,11 @@
 import "./Location.css";
 import { useLayoutEffect, useRef } from "react";
 
+/* Notes:
+- Popup with school image should stay in same relative position when shrunk (this can be completed when making mobile friendly)
+
+*/
+
 function Location() {
   // dynamic height resizing for map/markers - maintains ratio based on current map width
   const mapRef = useRef(null);
@@ -75,6 +80,15 @@ function Location() {
             id="guelph"
             ref={markerRef2}
           />
+          <div className="popup">
+            <img
+              src={require("../images/school.png")}
+              className="school-image"
+            />
+            <span className="school-title">Guelph University</span>
+            <span className="learn-more-link">Learn more -{">"}</span>
+            <div className="polygon"></div>
+          </div>
         </div>
       </div>
     </div>
