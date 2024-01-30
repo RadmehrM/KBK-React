@@ -9,6 +9,7 @@ import {
     Route,
 } from "react-router-dom";
 import Navbar from './parts/Navbar.js';
+import Footer from './components/Footer.js';
 
  
 function App() {
@@ -22,6 +23,7 @@ function App() {
               <Route path="/location" element={<Location />}/>
               <Route path="/team" element={<Team />}/>
           </Routes>
+          <Footer/>
       </div>
       </div>      
     );

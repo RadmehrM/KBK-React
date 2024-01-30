@@ -51,15 +51,25 @@ p {
 
 #map {
     margin-top: 50px;
-    height: calc(74vw * 0.546);  /* backup for js dynamic sizing (ratio from figma) */
+    /*height: calc(74vw * 0.546);  /* backup for js dynamic sizing (ratio from figma) */
     width: 74%; 
     align-items: center;
     justify-content: center;
     border: solid;
     border-width: 1px;
     border-color: var(--fontColor_Dark);
-    padding: 36px;
     z-index: 2;
+    padding: 3%;
+}
+
+#pin {
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    bottom: 0px;
+    transform: translate(-50%,  0%);
+    z-index: 1;
+    color: red;
 }
 
 .ellipse {

@@ -22,7 +22,7 @@ const Navbar=()=>{
                         <Link style={{ textDecoration: 'none' }} to="/about">About</Link>
                     </div>
                     <div className='Location'>
-                        <Link style={{ textDecoration: 'none' }} to="/Location">Location</Link>
+                        <Link style={{ textDecoration: 'none' }} to="/location">Location</Link>
                     </div>
                     <div className='Team'>
                         <Link style={{ textDecoration: 'none' }} to="/team">Gallery</Link>
