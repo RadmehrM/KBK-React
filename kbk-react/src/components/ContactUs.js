@@ -3,7 +3,7 @@ import React from "react";
 import { useForm, ValidationError } from "@formspree/react";
 
 /* TODO
- - add ellipses
+ - Remember to change the form endpoint when the project is complete (client should be the one receiving emails)
 */
 
 function ContactUs() {
@@ -16,14 +16,16 @@ function ContactUs() {
   return (
     <div className="container">
       <h1>Contact Us!</h1>
+      <div className="ellipse" id="ellipse-9"></div>
       <div className="kbk-email">
-        <span style={{ "font-weight": "600" }}>Email</span>
+        <span style={{ fontWeight: "600" }}>Email</span>
         <span>kidsbeingkidscharity@gmail.com</span>
       </div>
       <div className="social-media">
         <span>social media</span>
         <img src={require("../images/ContactUs/socials.png")}></img>
       </div>
+      <div className="ellipse" id="ellipse-11"></div>
       {/*Form endpoint goes below, will need to replace this with your own*/}
       <form
         onSubmit={handleSubmit}
@@ -58,6 +60,7 @@ function ContactUs() {
           Send
         </button>
       </form>
+      <div className="ellipse" id="ellipse-12"></div>
     </div>
   );
 }
