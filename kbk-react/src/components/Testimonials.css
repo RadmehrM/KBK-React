@@ -28,15 +28,15 @@
   }
   
   .testimonial:first-child .testimonial-decor {
-    background-image: url('path-to-your-first-ribbon-image.png'); /* Replace with the actual image path */
+    background-image: url('../images/testimonials/ribbon1.png'); /* Replace with the actual image path */
   }
   
   .testimonial:not(:first-child):not(:last-child) .testimonial-decor {
-    background-image: url('path-to-your-middle-ribbon-image.png'); /* Replace with the actual image path */
+    background-image: url('../images/testimonials/ribbon1.png'); /* Replace with the actual image path */
   }
   
   .testimonial:last-child .testimonial-decor {
-    background-image: url('path-to-your-last-ribbon-image.png'); /* Replace with the actual image path */
+    background-image: url('../images/testimonials/ribbon1.png'); /* Replace with the actual image path */
   }
   
   .testimonial-title {
