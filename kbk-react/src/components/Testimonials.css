@@ -25,11 +25,19 @@
   }
   
   .testimonials-header h2 {
+    position: absolute; /* Position the text absolutely relative to its positioned parent */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Offset the element by half of its width and height to center */
+    width: 100%; /* Set width to 100% of the parent container */
+    margin: 0; /* Reset margin */
+    /* Your existing styles */
     font-size: 24px;
     color: #000;
-    margin: 0;
     padding: 0;
+    z-index: 1; /* Ensure the text is above the banner image */
   }
+  
   
   .testimonial {
     margin-bottom: 30px;
