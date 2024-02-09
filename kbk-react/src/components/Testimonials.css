@@ -43,7 +43,7 @@
     font-size: 20px;
     font-weight: bold;
     margin: 0 0 10px 0;
-    color: #d14b28; /* Adjust color to match the design */
+    /*color: #d14b28;  Adjust color to match the design */
   }
   
   .testimonial-text {
@@ -53,6 +53,16 @@
     margin: 0;
   }
   
+/* Styles for left-aligned testimonial titles */
+.testimonial.left-aligned .testimonial-title {
+  text-align: left;
+}
+
+/* Styles for right-aligned testimonial titles */
+.testimonial.right-aligned .testimonial-title {
+  text-align: right;
+}
+
   .testimonial-decor {
     height: 20px; /* Adjust as needed */
     width: 100%; /* Adjust as needed */
