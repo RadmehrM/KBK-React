@@ -1,0 +1,46 @@
+/* Testimonials.css */
+
+.testimonials-section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .testimonials-header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .testimonials-header h2 {
+    color: #FFA500; /* Adjust the color as needed */
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .testimonials-container {
+    border-top: 3px solid #FFA500; /* Adjust the border color as needed */
+    padding-top: 15px;
+  }
+  
+  .testimonial {
+    margin-bottom: 20px;
+  }
+  
+  .testimonial-title {
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .testimonial-body {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  /* Add more styling here to match the specific details of your design */
+  
