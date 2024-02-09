@@ -2,6 +2,9 @@
 
 import React from 'react';
 import './Testimonials.css';
+import ribbon1 from '../images/testimonials/ribbon1.png'; // Import image
+import ribbon2 from '../images/testimonials/ribbon2.png'; // Import image
+import ribbon3 from '../images/testimonials/ribbon3.png'; // Import image
 
 function Testimonial({ title, text, className, alignRight }) { // Added alignRight prop
   const alignmentClass = alignRight ? 'right-aligned' : 'left-aligned';
@@ -27,17 +30,27 @@ function Testimonials() {
         className="first"
         alignRight={false}
       />
+      <div className="ribbon-left">
+      <img src={ribbon1} alt="Descriptive text for accessibility" className="testimonial-image"/>
+      </div>
+
       <Testimonial
         title='"A Beacon of Hope for Young Athletes"'
         text="As a single parent, providing my children with sports equipment was often financially challenging. Thanks to the unwavering support of this non-profit, my kids can now actively participate in sports without any barriers. The impact on their self-esteem and overall well-being is immeasurable. This organization is not just providing equipment; they are building a brighter future for our kids."
         alignRight={true}
       />
+        <div className="ribbon-right">
+        <img src={ribbon2} alt="Descriptive text for accessibility" className="testimonial-image"/>
+        </div>
       <Testimonial
         title='"Turning Passion into Possibility"'
         text="This non-profit has transformed the lives of so many children, including mine. By donating sports equipment, they are not only giving kids the tools they need to pursue their passions but also instilling values of teamwork, discipline, and resilience. My child's love for sports has flourished, and I am deeply grateful for the positive influence this organization has had on our lives."
         className="last"
         alignRight={false}
       />
+        <div className="ribbon-left">
+        <img src={ribbon3} alt="Descriptive text for accessibility" className="testimonial-image"/>
+        </div>
     </div>
   );
 }
