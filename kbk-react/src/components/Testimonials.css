@@ -11,8 +11,17 @@
   }
   
   .testimonials-header {
+    position: relative; /* The header will be the positioning context for the absolutely positioned text */
     text-align: center;
     margin-bottom: 30px;
+  }
+  
+  .testimonials-header-banner {
+    width: 50%; /* Adjust this as needed to make the banner smaller */
+    height: auto; /* This will maintain the aspect ratio of the image */
+    display: block; /* To ensure it takes up the full width */
+    margin: 0 auto; /* This will center the banner in the container */
+    margin-bottom: 0px;
   }
   
   .testimonials-header h2 {
@@ -53,6 +62,8 @@
     line-height: 1.5;
     color: #666;
     margin: 0;
+    margin-top: 0px;
+    margin-bottom: 0px;
   }
   
 /* Styles for left-aligned testimonial titles */

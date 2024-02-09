@@ -6,6 +6,7 @@ import ribbon1 from '../images/testimonials/ribbon1.png'; // Import image
 import ribbon2 from '../images/testimonials/ribbon2.png'; // Import image
 import ribbon3 from '../images/testimonials/ribbon3.png'; // Import image
 
+import testimonialsbanner from '../images/banner.png';
 function Testimonial({ title, text, className, alignRight }) { // Added alignRight prop
   const alignmentClass = alignRight ? 'right-aligned' : 'left-aligned';
 
@@ -22,6 +23,7 @@ function Testimonials() {
   return (
     <div className="testimonials">
       <div className="testimonials-header">
+      <img src={testimonialsbanner} alt="Header Banner" className="testimonials-header-banner" />
         <h2>Testimonials</h2>
       </div>
       <Testimonial
