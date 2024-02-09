@@ -1,46 +1,49 @@
 /* Testimonials.css */
 
-.testimonials-section {
+.testimonials {
+    font-family: 'Arial', sans-serif; /* Update with the actual font used in the Figma design */
     max-width: 800px;
-    margin: 0 auto;
+    margin: 40px auto;
     padding: 20px;
     background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
   
   .testimonials-header {
     text-align: center;
     margin-bottom: 30px;
+    border-bottom: 4px solid #FFA500; /* Adjust the color to match the Figma design */
+    display: inline-block;
+    padding-bottom: 10px;
   }
   
   .testimonials-header h2 {
-    color: #FFA500; /* Adjust the color as needed */
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-  
-  .testimonials-container {
-    border-top: 3px solid #FFA500; /* Adjust the border color as needed */
-    padding-top: 15px;
+    font-size: 24px; /* Adjust the font size to match the Figma design */
+    color: #333;
+    margin: 0;
   }
   
   .testimonial {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
   
   .testimonial-title {
-    color: #333;
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 5px;
+    color: #FFA500; /* Adjust the color to match the Figma design */
+    font-size: 18px; /* Adjust the font size to match the Figma design */
+    font-weight: bold; /* Adjust the weight to match the Figma design */
+    margin-bottom: 10px;
   }
   
-  .testimonial-body {
-    color: #666;
-    font-size: 16px;
-    line-height: 1.6;
+  .testimonial-text {
+    color: #666; /* Adjust the color to match the Figma design */
+    font-size: 16px; /* Adjust the font size to match the Figma design */
+    line-height: 1.5; /* Adjust the line height to match the Figma design */
   }
   
-  /* Add more styling here to match the specific details of your design */
+  @media (max-width: 768px) {
+    .testimonials {
+      padding: 10px;
+    }
+  }
+  
+  /* Add additional responsive design styles as needed */
   
