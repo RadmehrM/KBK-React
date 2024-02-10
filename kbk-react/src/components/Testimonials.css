@@ -1,19 +1,27 @@
 /* Testimonials.css */
+.testimonial.left-aligned {
+  text-align: left;
+}
 
+.testimonial.right-aligned {
+  text-align: right;
+}
 .testimonials {
     font-family: 'Arial', sans-serif; /* Replace with the actual font from the design */
     color: #333;
     max-width: 800px;
-    margin: 40px auto;
+    margin: 0px auto;
     padding: 20px;
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 0px;
   }
   
   .testimonials-header {
-    position: relative; /* The header will be the positioning context for the absolutely positioned text */
+    position: relative; /* positions title text (Testimonials */
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 0px;
+    margin-top: 0px;
   }
   
   .testimonials-header-banner {
@@ -22,8 +30,10 @@
     display: block; /* To ensure it takes up the full width */
     margin: 0 auto; /* This will center the banner in the container */
     margin-bottom: 0px;
+    margin-top: 0px;
   }
   
+  /* Styles for the title text (only for Testimonials)*/
   .testimonials-header h2 {
     position: absolute; /* Position the text absolutely relative to its positioned parent */
     top: 50%; /* Center vertically */
@@ -33,35 +43,38 @@
     margin: 0; /* Reset margin */
     /* Your existing styles */
     font-size: 24px;
-    color: #000;
+    color: #000000;
     padding: 0;
     z-index: 1; /* Ensure the text is above the banner image */
+    
   }
   
   
   .testimonial {
-    margin-bottom: 30px;
+    margin-bottom: 0px;
+    margin-top: 0%;
     text-align: center;
   }
   
   .testimonial:first-child .testimonial-decor {
-    background-image: url('../images/testimonials/ribbon1.png'); /* Replace with the actual image path */
+    background-image: url('../images/testimonials/ribbon1.png'); 
   }
   
   .testimonial:not(:first-child):not(:last-child) .testimonial-decor {
-    background-image: url('../images/testimonials/ribbon1.png'); /* Replace with the actual image path */
-  }
+    background-image: url('../images/testimonials/ribbon1.png'); 
   
+  }
   .testimonial:last-child .testimonial-decor {
-    background-image: url('../images/testimonials/ribbon1.png'); /* Replace with the actual image path */
+    background-image: url('../images/testimonials/ribbon1.png'); 
   }
   
   .testimonial-title {
     font-size: 16px;
     font-family: 'Inter', sans-serif;
-    font-weight: bolder;
+    font-weight: 10000000;
     margin: 0 0 1px 0;
-    /*color: #d14b28;  Adjust color to match the design */
+    color: #000000;
+    
   }
   
   .testimonial-text {
@@ -74,11 +87,6 @@
     margin-bottom: 0px;
   }
   
-/* Styles for left-aligned testimonial titles */
-.testimonial.left-aligned .testimonial-title {
-  text-align: left;
-}
-
 /* Styles for right-aligned testimonial titles */
 .testimonial.right-aligned .testimonial-title {
   text-align: right;
