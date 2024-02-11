@@ -58,6 +58,28 @@
     margin-top: 10%;
     margin-left: 10%;
   }
+
+#header {
+  position: relative;
+  height: 140px;
+  margin-bottom: 100px;
+}
+
+#headerImage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+#headerText {
+  font-size: var(--fontSize_Large);
+  font-weight: 600;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
   
   
   
