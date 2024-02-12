@@ -1,4 +1,22 @@
 import image from '../images/circle.png'
+import gallery1 from '../images/gallery1.png'
+import gallery2 from '../images/gallery2.png'
+import gallery3 from '../images/gallery3.png'
+import gallery4 from '../images/gallery4.png'
+import gallery5 from '../images/gallery5.png'
+
+import partner1 from '../images/ymca_home.webp'
+import partner2 from '../images/nb_home.webp'
+import partner3 from '../images/bgc_home.webp'
+import partner4 from '../images/nationals_home.webp'
+import partner5 from '../images/baseball_home.webp'
+import partner6 from '../images/niagara_home.webp'
+import partner7 from '../images/sherrard_home.webp'
+import faces from '../images/faces_home.webp'
+
+import { Link } from 'react-router-dom'
+
+
 
 function Home() {
 
@@ -43,7 +61,92 @@ function Home() {
         </div>
        </div>
 
+       <div className='gallery-header'>
+            <Link to='/gallery' className='gallery-link'>Gallery</Link>
+       </div>
+       <div className='gallery'> 
+            <div className='col left-col'>
+                <img src={gallery1} alt='Left Image' />
+            </div>
+            <div className='col'>
+                <div className='image-gallery right-col'>
+                    <img src={gallery2} alt='Top Right Image 1' />
+                    <img src={gallery3} alt='Bottom Right Image 2' />
+                
+                    <img src={gallery4} alt='Top Right Image 3' />
+                    <img src={gallery5} alt='Bottom Right Image 4' />
+                </div>
+            </div>
+       </div>
+
+       <div className='title'>
+                <h1 className='kidsHeader1'>LET KIDS BE KIDS!</h1>
+        </div>
+
+       <div className='howItWorks'>
+            <div className='col-text'>
+                <h2 className='kidsHeader2'>How It Works</h2>
+                    <p className='kidsText'>
+                        Our team goes door to door offering to 
+                        collect used sports equipment from families. We then work with 
+                        foundations in the community to distribute to kids who want to play!
+                    </p>
+                <h2 className='kidsHeader3'>How YOU can Help</h2>
+                    <p className='kidsText2'>
+                        Got any equipment lying around the house 
+                        that you simply don't use anymore? Donate 
+                        your equipment today to help a child enjoy the sport!
+                    </p>
+            </div>
+            <div className='col-img'>
+                <img src={faces} alt='kids faces' />
+            </div>
+       </div>
+
+        <div className='container'>
+            <div className="divider"></div>
+        </div>
+       
+
+        <div className="ourPartners">
+            <div className="partners">
+                <h1 className="partnersHeader">Our Partners</h1>
+                <div className="partnersDivider"></div>
+            </div>
+            <div className='wrap-grid-container'>
+                <div className="wrap-grid">
+                    <a href="https://www.ymcaswo.ca/">
+                        <img src={partner1} alt="ymca" />
+                    </a>
+                    <a href="https://www.newbalance.ca/">
+                        <img src={partner2} alt="new balance" />
+                    </a>
+                    <a href="https://www.bgclondon.ca/">
+                        <img src={partner3} alt="bgc" />
+                    </a>
+                    <a href="https://nationals.gojhl.ca/">
+                        <img src={partner4} alt="nationals" />
+                    </a>
+                </div>
+                <div className='wrap-grid'>
+                    <a href="https://westernmustangs.ca/sports/baseball">
+                        <img src={partner5} alt="baseball" />
+                    </a>
+                    <a href="https://www.startmeupniagara.ca/site/home">
+                        <img src={partner6} alt="niagara" />
+                    </a>
+                    <a href="https://www.sherrardkuzz.com/">
+                        <img src={partner7} alt="sherrard kuzz" />
+                    </a>
+                </div>
+            </div>
+
+            
+        </div>
+           
     </div>
+
+    
     )
 
 }

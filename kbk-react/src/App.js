@@ -4,6 +4,7 @@ import Location from './components/Location.js';
 import Home from './components/Home.js'
 import Team from './components/Team.js'
 import React from "react";
+import Footer from './components/Footer.js'
 import {
     Routes,
     Route,
@@ -23,6 +24,7 @@ function App() {
               <Route path="/team" element={<Team />}/>
           </Routes>
       </div>
+      <Footer />
       </div>      
     );
 }
