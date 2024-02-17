@@ -1,7 +1,7 @@
 import image1 from "../images/69ba5b_25690ae97244444f930a4f3ff90ea00b~mv2.webp";
 import image2 from "../images/69ba5b_86aa0cc93ce841509b8f3d93e2b2a771~mv2.webp";
 import underline from "../images/underline.png"
-import "./About.css";
+import "../styles/About.css";
 
 const items = ["Kids being Kids is founded by two dedicates students, Ben Lambert and Adam Cohen, with the shared goal of giving back to their community.",
 "Ben and Adam rally their community members, including fellow students, families, and local businesses, to join their cause.",

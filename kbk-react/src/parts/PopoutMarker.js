@@ -1,4 +1,4 @@
-import "./PopoutMarker.css"
+import "../styles/PopoutMarker.css"
 import { useRef, useEffect, useState } from "react";
 import { FaMapMarkerAlt, FaArrowRight } from "react-icons/fa";
 

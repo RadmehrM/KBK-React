@@ -1,4 +1,4 @@
-import "./Location.css";
+import "../styles/Location.css";
 import { useLayoutEffect, useRef } from "react";
 
 /* Notes:

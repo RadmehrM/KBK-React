@@ -1,4 +1,4 @@
-import "./ContactUs.css";
+import "../styles/ContactUs.css";
 import React from "react";
 import { useForm, ValidationError } from "@formspree/react";
 

@@ -4,7 +4,7 @@ import leafsImage from '../images/leafs.webp';
 import baseballImage from '../images/baseball.webp';
 import bgcImage from '../images/bgc.webp';
 import { SocialIcon } from 'react-social-icons'
-import './Footer.css'
+import '../styles/Footer.css'
 
 
 function Footer() {

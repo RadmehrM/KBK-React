@@ -1,7 +1,7 @@
 import React from 'react';
 import { ProfileCard } from './ProfileCard';
 import teamMembers from '../data/teams';
-import styles from './Team.module.css'; // Updated to use CSS module
+import styles from '../styles/Team.module.css'; // Updated to use CSS module
 import teamribbon from '../images/team/—Pngtree—orange ribbon banner promotion_8525066.png';
 import elementImage from '../images/team/69ba5b_a7f63558cebe4f45a9ca4e389eff1c63~mv2.webp';
 
@@ -30,10 +30,10 @@ const TeamSection = () => {
         />
       ))}
 
-      {/* <div className={styles.additionalImageContainer}>
+      <div className={styles.additionalImageContainer}>
         <img className={styles.additionalElement} alt="Decorative element" src={elementImage} />
         <div className={styles.rectangle}></div>
-      </div> */}
+      </div>
     </section>
   );
 };

@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./ProfileCard.module.css"; // Updated path to use CSS module
+import styles from "../styles/ProfileCard.module.css"; // Updated path to use CSS module
 
 export const ProfileCard = ({ name, title, boardPosition, imageSrc }) => {
   return (

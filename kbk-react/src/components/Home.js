@@ -1,5 +1,5 @@
 import image from '../images/circle.png'
-import './Home.css'
+import '../styles/Home.css'
 import gallery1 from '../images/gallery1.png'
 import gallery2 from '../images/gallery2.png'
 import gallery3 from '../images/gallery3.png'

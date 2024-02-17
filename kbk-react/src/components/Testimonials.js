@@ -1,7 +1,7 @@
 // Testimonials.js
 
 import React from 'react';
-import './Testimonials.css';
+import '../styles/Testimonials.css';
 import ribbon1 from '../images/testimonials/ribbon1.png'; // Import image
 import ribbon2 from '../images/testimonials/ribbon2.png'; // Import image
 import ribbon3 from '../images/testimonials/ribbon3.png'; // Import image
