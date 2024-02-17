@@ -12,8 +12,8 @@ const Navbar=()=>{
                     <div className='homeNAV'>
                         <Link style={{ textDecoration: 'none' }} to="/home">Home</Link>
                     </div>
-                    <div className='Team'>
-                        <Link style={{ textDecoration: 'none' }} to="/team">Our Story</Link>
+                    <div className='About'>
+                        <Link style={{ textDecoration: 'none' }} to="/about">Our Story</Link>
                     </div>
                     <div className='Team'>
                         <Link style={{ textDecoration: 'none' }} to="/team">The Team</Link>
@@ -25,13 +25,13 @@ const Navbar=()=>{
                         <Link style={{ textDecoration: 'none' }} to="/location">Location</Link>
                     </div>
                     <div className='Team'>
-                        <Link style={{ textDecoration: 'none' }} to="/team">Gallery</Link>
+                        <Link style={{ textDecoration: 'none' }} to="/gallery">Gallery</Link>
                     </div>
                     <div className='Team'>
-                        <Link style={{ textDecoration: 'none' }} to="/team">Contact</Link>
+                        <Link style={{ textDecoration: 'none' }} to="/contact">Contact</Link>
                     </div>
                     <div className='Team'>
-                        <Link style={{ textDecoration: 'none' }} to="/team">Testimonial</Link>
+                        <Link style={{ textDecoration: 'none' }} to="/testimonials">Testimonial</Link>
                     </div>
                 </div>
                 </div>

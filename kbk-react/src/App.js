@@ -10,6 +10,9 @@ import {
 } from "react-router-dom";
 import Navbar from './parts/Navbar.js';
 import Footer from './components/Footer.js';
+import GalleryPage from './components/GalleryPage.js';
+import ContactUs from './components/ContactUs.js';
+import Testimonials from './components/Testimonials.js';
 
  
 function App() {
@@ -22,6 +25,12 @@ function App() {
               <Route path="/about" element={<About />} />
               <Route path="/location" element={<Location />}/>
               <Route path="/team" element={<Team />}/>
+              <Route path="/gallery" element={<GalleryPage />}/>
+              <Route path="/contact" element={<ContactUs />}/>
+              <Route path="/testimonials" element={<Testimonials />}/>
+
+
+
           </Routes>
           <Footer/>
       </div>

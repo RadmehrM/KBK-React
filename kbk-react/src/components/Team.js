@@ -9,12 +9,15 @@ const TeamSection = () => {
   return (
     <section className={styles.teamSection}>
       <div className={styles.imageContainer}>
+      <div id="header">
         <img
-          className={styles.pngtreeorangeRibbon}
-          alt="Team"
-          src={teamribbon}
-        />
-        <p className={styles.headerText}>Team</p>
+          id="headerImage"
+          src={require("../images/banner.png")}
+          alt="banner"
+          width="371"
+        ></img>
+        <p id="headerText">Team</p>
+      </div>
       </div>
 
       {teamMembers.map(member => (
