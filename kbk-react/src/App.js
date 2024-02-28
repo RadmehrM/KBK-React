@@ -1,28 +1,41 @@
 import './App.css';
-
+import About from './components/About.js'
 import Location from './components/Location.js';
+import Home from './components/Home.js'
+import Team from './components/Team.js'
+import React from "react";
+import {
+    Routes,
+    Route,
+} from "react-router-dom";
+import Navbar from './parts/Navbar.js';
+import Footer from './components/Footer.js';
+import GalleryPage from './components/GalleryPage.js';
+import ContactUs from './components/ContactUs.js';
+import Testimonials from './components/Testimonials.js';
 
+ 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <Location/>
-        {/* <img src={logo} className="App-logo" alt="logo" /> */}
-        {/* <>
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a> */}
-      </header>
-    </div>
-  );
-}
+    return (
+      <div className='root'>
+      <Navbar />
+      <div className='container'>
+          <Routes>
+              <Route path='*' element={<Home />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/location" element={<Location />}/>
+              <Route path="/team" element={<Team />}/>
+              <Route path="/gallery" element={<GalleryPage />}/>
+              <Route path="/contact" element={<ContactUs />}/>
+              <Route path="/testimonials" element={<Testimonials />}/>
 
+
+
+          </Routes>
+          <Footer/>
+      </div>
+      </div>      
+    );
+}
+ 
 export default App;
