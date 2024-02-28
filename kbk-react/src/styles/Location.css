@@ -107,32 +107,51 @@
   }
   
   .marker {
-    max-width: 31.5px;
-    max-height: 45px;
+    /* max-width: 31.5px;
+    max-height: 45px; */
     position: relative;
+    display: inline;
+    align-items: center;
   }
   
-  #oshawa {
-    left: 14.6%;
-    top: 15%;
+  #toronto {
+    left: 3%;
+    top: 33%;
+  }
+
+  #london {
+    left: -29%;
+    top: 62%;
+  }
+
+  #stcatherines {
+    left: 3%;
+    top: 58%;
   }
   
   #guelph {
-    left: -14%;
-    top: 33%;
+    left: -17%;
+    top: 37%;
+  }
+
+  #kingston {
+    left: 30%;
+    top: 0%;
   }
   
   .popup {
     width: 334px;
     height: 233px;
     background-color: white;
-    position: relative;
-    top: -20%;
-    left: 21%;
     border-radius: 7px;
     border: 0.5px solid #00000070;
     display: flex;
     flex-direction: column;
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    left: 0;
+    transform: translateX(-50%) translateY(-30%);
   }
   
   .school-image {

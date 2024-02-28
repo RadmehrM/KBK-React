@@ -1,5 +1,5 @@
 import "../styles/Location.css";
-import { useLayoutEffect, useRef } from "react";
+import { useLayoutEffect, useRef, useState } from "react";
 
 /* Notes:
 - Popup with school image should stay in same relative position when shrunk (this can be completed when making mobile friendly)
@@ -9,25 +9,21 @@ import { useLayoutEffect, useRef } from "react";
 function Location() {
   // dynamic height resizing for map/markers - maintains ratio based on current map width
   const mapRef = useRef(null);
-  const markerRef = useRef(null);
-  const markerRef2 = useRef(null);
+  const [markerDimension, setMarkerDimension] = useState({
+    width: 33,
+    height: 33 * 1.429,
+  })
+
+  const [popup, setPopup] = useState(null);
 
   useLayoutEffect(() => {
     function updateSize() {
-      if (mapRef.current && markerRef.current && markerRef2.current) {
+      if (mapRef.current) {
         mapRef.current.style.height = `${mapRef.current.offsetWidth * 0.546}px`;
-        markerRef.current.style.width = `${
-          mapRef.current.offsetWidth * 0.03
-        }px`;
-        markerRef.current.style.height = `${
-          markerRef.current.offsetWidth * 1.429
-        }px`;
-        markerRef2.current.style.width = `${
-          mapRef.current.offsetWidth * 0.03
-        }px`;
-        markerRef2.current.style.height = `${
-          markerRef2.current.offsetWidth * 1.429
-        }px`;
+        setMarkerDimension({
+          width: mapRef.current.offsetWidth * 0.025,
+          height: mapRef.current.offsetWidth * 0.025 * 1.429
+        })
       }
     }
     window.addEventListener("resize", updateSize);
@@ -61,30 +57,132 @@ function Location() {
         </p>
       </div>
       <div id="map" ref={mapRef}>
-        <div id="map-image">
-          <img
-            src={require("../images/marker.png")}
-            alt=""
+        <div id="map-image" onClick={() => setPopup(null)}>
+          
+          {/* toronto */}
+          <div
             className="marker"
-            id="oshawa"
-            ref={markerRef}
-          />
-          <img
-            src={require("../images/marker.png")}
-            alt=""
+            id="toronto"
+          >
+            <img
+              src={require("../images/marker.png")}
+              alt=""
+              style={{...markerDimension, transform: 'translateX(-50%)'}}
+              onMouseOver={() => {setPopup('toronto')}}
+            />
+            {popup === 'toronto' &&
+              <div className="popup">
+                <img
+                  src={require('../images/school.png')}
+                  className="school-image"
+                  alt="map"
+                />
+                <span className="school-title">Toronto</span>
+                <span className="learn-more-link">Learn more -{">"}</span>
+                <div className="polygon"></div>
+              </div>
+            }
+          </div>
+          
+          {/* london */}
+          <div
+            className="marker"
+            id="london"
+          >
+            <img
+              src={require("../images/marker.png")}
+              alt=""
+              style={{...markerDimension, transform: 'translateX(-50%)'}}
+              onMouseOver={() => {setPopup('london')}}
+            />
+            {popup === 'london' &&
+              <div className="popup">
+                <img
+                  src={require('../images/school.png')}
+                  className="school-image"
+                  alt="map"
+                />
+                <span className="school-title">London</span>
+                <span className="learn-more-link">Learn more -{">"}</span>
+                <div className="polygon"></div>
+              </div>
+            }
+          </div>
+
+          {/* stcatherines */}
+          <div
+            className="marker"
+            id="stcatherines"
+          >
+            <img
+              src={require("../images/marker.png")}
+              alt=""
+              style={{...markerDimension, transform: 'translateX(-50%)'}}
+              onMouseOver={() => {setPopup('stcatherines')}}
+            />
+            {popup === 'stcatherines' &&
+              <div className="popup">
+                <img
+                  src={require('../images/school.png')}
+                  className="school-image"
+                  alt="map"
+                />
+                <span className="school-title">St Catherines</span>
+                <span className="learn-more-link">Learn more -{">"}</span>
+                <div className="polygon"></div>
+              </div>
+            }
+          </div>
+
+          {/* guelph */}
+          <div
             className="marker"
             id="guelph"
-            ref={markerRef2}
-          />
-          <div className="popup">
+          >
             <img
-              src={require("../images/school.png")}
-              className="school-image"
+              src={require("../images/marker.png")}
+              alt=""
+              style={{...markerDimension, transform: 'translateX(-50%)'}}
+              onMouseOver={() => {setPopup('guelph')}}
             />
-            <span className="school-title">Guelph University</span>
-            <span className="learn-more-link">Learn more -{">"}</span>
-            <div className="polygon"></div>
-          </div>
+            {popup === 'guelph' &&
+              <div className="popup">
+                <img
+                  src={require('../images/school.png')}
+                  className="school-image"
+                  alt="map"
+                />
+                <span className="school-title">Guelph</span>
+                <span className="learn-more-link">Learn more -{">"}</span>
+                <div className="polygon"></div>
+              </div>
+            }
+          </div>   
+
+          {/* kingston */}
+          <div
+            className="marker"
+            id="kingston"
+          >
+            <img
+              src={require("../images/marker.png")}
+              alt=""
+              style={{...markerDimension, transform: 'translateX(-50%)'}}
+              onMouseOver={() => {setPopup('kingston')}}
+            />
+            {popup === 'kingston' &&
+              <div className="popup">
+                <img
+                  src={require('../images/school.png')}
+                  className="school-image"
+                  alt="map"
+                />
+                <span className="school-title">Kingston</span>
+                <span className="learn-more-link">Learn more -{">"}</span>
+                <div className="polygon"></div>
+              </div>
+            }
+          </div>     
         </div>
       </div>
     </div>
