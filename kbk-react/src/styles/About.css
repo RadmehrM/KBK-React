@@ -77,13 +77,6 @@
     margin: 2rem 2rem 2rem 4rem;
 }
 
-
-
-/* .header{
-    display: flex;
-    flex-direction: column;
-}
-*/
 #about-title{
     font-size: clamp(36px, 3vw, 45px);
     font-weight: 600;
@@ -112,82 +105,6 @@
     max-width: 1075px;
 }
 
-
-/*
-
-.about-text-box{
-    width: 58%;
-    margin: auto;
-    padding: none;
-}
-
-
-.image1 {
-    width: 319px;
-    height: 319px;
-}
-.image2 {
-    width: 314px;
-    height: 418px;
-}
-
-.timelineContent {
-    width: 641px;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 29.05px;
-    transform: translateY(-20%);
-    padding-left: 50px;
-}
-
-.timelineIcon {
-    position: relative;
-    width: 20px;
-    height: 20px;
-    border: 2px solid black;
-    border-radius: 50%;
-    left: -1px;
-    transform: translateX(-50%);
-    background-color: white;
-}
-
-.timelineContainer {
-    margin: 0 auto;
-    display: grid;
-    height: 905px;
-    width: 1297px;
-    grid-template-columns: 2px 2fr 1fr;
-    padding-left: 215px;
-    padding-top: 27px;
-    padding-bottom: 127px;
-}
-.timelineHeader {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.timeline{
-    background-color: black !important; 
-    width: 2px;
-    height: 753px;
-}
-.timelineImages{
-    display: flex;
-    flex-direction: column;
-    gap: 133px;
-}
-.timelineItems {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.timelineItem{
-    display: flex;
-}
-*/
 .timelineHeaderText {
     font-weight: 400;
     font-size: clamp(36px, 3vw, 75px);
