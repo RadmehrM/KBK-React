@@ -43,7 +43,6 @@
   }
   
   #map {
-    margin-top: 50px;
     /*height: calc(74vw * 0.546);  /* backup for js dynamic sizing (ratio from figma) */
     width: 74%;
     align-items: center;
@@ -56,11 +55,14 @@
   }
   
   #map-image {
-    background: url("../images/map.png"); /* set map as background image */
-    box-sizing: border-box;
-    background-size: contain;
-    width: 100%;
-    height: 100%;
+    /*background: url("../images/map.png"); /* set map as background image */
+    /* box-sizing: border-box; */
+    /* background-size: contain; */
+    /* background-size: cover;  */
+    /* width: 100%;
+    height: 100%; */
+    width: 1386px;
+    height: 700px;
   }
   
   .ellipse {
@@ -115,30 +117,35 @@
   }
   
   #toronto {
-    left: 3%;
-    top: 33%;
+    /* left: -4%;
+    top: 41%; */
+    left: -10%;
+    top: 41%;
   }
 
   #london {
-    left: -29%;
-    top: 62%;
+    /* left: -43%;
+    top: 77%; */
+    left: -50%;
+    top: 77%;
   }
 
   #stcatherines {
-    left: 3%;
-    top: 58%;
+    left: -12%;
+    top: 69%;
   }
   
   #guelph {
-    left: -17%;
-    top: 37%;
+    left: -35%;
+    top: 47%;
   }
 
   #kingston {
-    left: 30%;
-    top: 0%;
+    left: 38%;
+    top: 9%;
   }
   
+
   .popup {
     width: 334px;
     height: 233px;
@@ -153,7 +160,7 @@
     left: 0;
     transform: translateX(-50%) translateY(-30%);
   }
-  
+
   .school-image {
     height: 75.5%;
     width: 100%;
@@ -179,4 +186,38 @@
     border-right: 16px solid transparent;
     border-top: 44.32px solid white;
     align-self: center;
+  }
+
+  @media screen and (max-width: 900px) {
+    .popup {
+      width: 160px;
+      height: 140px;
+      transform: translateX(-50%) translateY(-50%);
+    }
+
+    #toronto {
+      left: -10%;
+      top: 44%;
+    }
+  
+    #london {
+      left: -49%;
+      top: 80%;
+    }
+  
+    #stcatherines {
+      left: -11%;
+      top: 72%;
+    }
+    
+    #guelph {
+      left: -32%;
+      top: 50%;
+    }
+  
+    #kingston {
+      left: 41%;
+      top: 12%;
+    }
+
   }
