@@ -10,28 +10,25 @@ const Navbar=()=>{
                 </div>
                 <div className='navBar'>
                     <div className='homeNAV'>
-                        <Link style={{ textDecoration: 'none' }} to="/home">Home</Link>
-                    </div>
-                    <div className='About'>
-                        <Link style={{ textDecoration: 'none' }} to="/about">Our Story</Link>
+                        <Link style={{ textDecoration: 'none', color: 'black' }} to="/home">Home</Link>
                     </div>
                     <div className='Team'>
-                        <Link style={{ textDecoration: 'none' }} to="/team">The Team</Link>
+                        <Link style={{ textDecoration: 'none', color: 'black' }} to="/team">The Team</Link>
                     </div>
                     <div className='About'>
-                        <Link style={{ textDecoration: 'none' }} to="/about">About</Link>
+                        <Link style={{ textDecoration: 'none', color: 'black' }} to="/about">About</Link>
                     </div>
                     <div className='Location'>
-                        <Link style={{ textDecoration: 'none' }} to="/location">Location</Link>
+                        <Link style={{ textDecoration: 'none', color: 'black' }} to="/location">Location</Link>
                     </div>
                     <div className='Team'>
-                        <Link style={{ textDecoration: 'none' }} to="/gallery">Gallery</Link>
+                        <Link style={{ textDecoration: 'none', color: 'black' }} to="/gallery">Gallery</Link>
                     </div>
                     <div className='Team'>
-                        <Link style={{ textDecoration: 'none' }} to="/contact">Contact</Link>
+                        <Link style={{ textDecoration: 'none', color: 'black' }} to="/contact">Contact</Link>
                     </div>
                     <div className='Team'>
-                        <Link style={{ textDecoration: 'none' }} to="/testimonials">Testimonial</Link>
+                        <Link style={{ textDecoration: 'none', color: 'black' }} to="/testimonials">Testimonial</Link>
                     </div>
                 </div>
                 </div>

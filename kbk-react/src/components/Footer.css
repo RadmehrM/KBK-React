@@ -13,12 +13,9 @@ footer{
     margin-right: 20px;
 }
 
-.socials .icon{
-    width: 100px;
-    height: 100px;
+.socials {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-
-.socials a{
-    font-size: 20px;
-    color: white;
-}
+  

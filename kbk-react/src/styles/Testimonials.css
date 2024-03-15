@@ -2,18 +2,17 @@
 .testimonial.left-aligned {
     text-align: left;
   }
+
   
   .testimonial.right-aligned {
     text-align: right;
   }
   .testimonials {
-      font-family: 'Arial', sans-serif; /* Replace with the actual font from the design */
-      color: #333;
-      max-width: 800px;
+      font-family: 'Inter', sans-serif; /* Replace with the actual font from the design */
+      color: black;
+      padding: 4vh 10vh 10vh;
       margin: 0px auto;
-      padding: 20px;
       background-color: #fff;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
       margin-top: 0px;
     }
     
@@ -69,7 +68,7 @@
     }
     
     .testimonial-title {
-      font-size: 16px;
+      font-size: 28px;
       font-family: 'Inter', sans-serif;
       font-weight: 10000000;
       margin: 0 0 1px 0;
@@ -79,7 +78,7 @@
     
     .testimonial-text {
       font-family: 'Inter', sans-serif;
-      font-size: 16px;
+      font-size: 28px;
       line-height: 1.5;
       color: #666;
       margin: 0;
@@ -113,3 +112,8 @@
       }
     }
     
+
+.testimonials #header{
+  font-family: "Inter" !important;
+  padding-bottom: vh !important;
+}

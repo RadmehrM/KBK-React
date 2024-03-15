@@ -13,11 +13,24 @@ const GalleryPage = () => {
   const photos = [pic1, pic2, pic3, pic4, pic5, pic6, pic7];
 
   return (
-    <div className="photo-collage">
-      {photos.map((photo, index) => (
-        <img key={index} src={photo} alt={`Photo ${index}`} className={`photo-${index + 1}`} />
-      ))}
+    <div className='gallery-container'>
+      <div id="header">
+        <img
+          id="headerImage"
+          src={require("../images/banner.png")}
+          alt="banner"
+          width="371"
+        ></img>
+        <p id="headerText">Gallery</p>
+      </div>
+
+      <div className="photo-collage">
+            {photos.map((photo, index) => (
+              <img key={index} src={photo} alt={`Photo ${index}`} className={`photo-${index + 1}`} />
+            ))}
+      </div>
     </div>
+    
   );
 };
 

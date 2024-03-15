@@ -3,6 +3,9 @@
     color: var(--fontColor_Dark);
     font-size: var(--fontSize_Medium);
     font-family: "Inter";
+    font-size: 24px;
+    padding-left: 6vh;
+    padding-right: 6vh;
   }
   
   #container {

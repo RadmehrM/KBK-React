@@ -4,6 +4,7 @@
     grid-template-rows: repeat(4, auto);
     padding: 20px;
     margin-left: 5%;
+    padding-top: 3.5vh;
   }
   
   .photo {
@@ -59,5 +60,5 @@
     margin-left: 10%;
   }
   
-  
+
   

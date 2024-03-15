@@ -26,22 +26,20 @@ function Footer() {
             </a>
         </div>
             
-        <div className='socials'>
-            <a href='mailto:kidsbeingkidscharity@gmail.com'> kidsbeingkidscharity@gmail.com</a>
-
-            <SocialIcon url='https://www.linkedin.com/company/kids-being-kids-charity/'
+        <div className='socials' style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+            <a href='mailto:kidsbeingkidscharity@gmail.com' style={{ marginRight: '28px' }}>kidsbeingkidscharity@gmail.com</a>
+            <SocialIcon
+                url='https://www.linkedin.com/company/kids-being-kids-charity/'
+                bgColor='transparent'
+                style={{ width: '100px', height: '100px', marginLeft: '0px' }}
+            />
+            <SocialIcon
+                url='https://www.instagram.com/kidsbeingkidsorg/'
                 bgColor='transparent'
                 style={{ width: '100px', height: '100px' }}
             />
-
-            <SocialIcon url='https://www.instagram.com/kidsbeingkidsorg/'
-                bgColor='transparent'
-                style={{ width: '100px', height: '100px' }}
-            />
-            
-
-            
         </div>
+
     </footer>
   )
 }

@@ -10,7 +10,6 @@ import {
     Route,
 } from "react-router-dom";
 import Navbar from './parts/Navbar.js';
-import Footer from './components/Footer.js';
 import GalleryPage from './components/GalleryPage.js';
 import ContactUs from './components/ContactUs.js';
 import Testimonials from './components/Testimonials.js';
@@ -33,7 +32,7 @@ function App() {
 
 
           </Routes>
-          <Footer/>
+          
       </div>
       <Footer />
       </div>      

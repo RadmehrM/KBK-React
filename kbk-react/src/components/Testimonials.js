@@ -20,7 +20,8 @@ function Testimonial({ title, text, className, alignRight }) { // Added alignRig
 
 function Testimonials() {
   return (
-    <div className="testimonials">
+    <div className='testimonials-container'>
+      <div className="testimonials">
         <div id="header">
         <img
           id="headerImage"
@@ -31,7 +32,7 @@ function Testimonials() {
         <p id="headerText">Testimonial</p>
       </div>
 
-      <div style={{height: "50px", width:"100%"}}></div>
+      <div style={{height: "90px", width:"100%"}}></div>
       <div className="ribbon-left">
       <Testimonial
       
@@ -63,6 +64,8 @@ function Testimonials() {
         <img src={ribbon3} alt="Descriptive text for accessibility" className="testimonial-image"/>
         </div>
     </div>
+    </div>
+    
   );
 }
 
