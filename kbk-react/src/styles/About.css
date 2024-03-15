@@ -1,0 +1,126 @@
+.timelineHeader, .timelineContainer{
+    margin: 0 2rem;
+}
+.timelineHeader {
+    padding-top: 2rem;
+}
+
+.timelineImage {
+    max-width: 100%;
+    display: block;
+}
+
+@media(min-width: 700px) {
+    .timelineContainer {
+        display: flex;
+    }
+}
+.timelineContainer {
+    margin-bottom: 10rem;
+}
+
+.timelineContainer > * {
+    padding: 2rem;
+}
+
+.timelineImages {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    justify-content: space-around;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.timelineLeft {
+    flex: 1.5;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 25px;
+    display: grid;
+    grid-template-columns: 3px 1fr;
+    font-size: clamp(20px, 2vw, 24px); /* USE CLAMP HERE TO MAKE FONT SIZE ADAPTIVE WITH SHRINKING WINDOW */
+    line-height: 29.05px;
+}
+
+
+
+.timeline-line {
+    position: relative;
+    background-color: black;
+}
+
+.timelinePoint {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: white;
+    border: 2px solid black;
+}
+
+.timelinePointBottom {
+    top: initial;
+    bottom: 0;
+}
+
+.timelinePointMiddle {
+    top: initial;
+    bottom: 60%;
+}
+
+.timelineComponent {
+    margin: 2rem 2rem 2rem 4rem;
+}
+
+#about-title{
+    font-size: clamp(36px, 3vw, 45px);
+    font-weight: 600;
+    margin-top: 0;
+}
+
+.about-text{
+    font-size: clamp(18px, 2.5vw, 24px);
+    font-weight: 600;
+    color: black;
+
+}
+.aboutHeader {
+    display: flex;
+    justify-content: center;
+    background-image: url("../images/about-bg.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+}
+
+
+
+.about-disp-box {
+    padding: 2rem;
+    max-width: 1075px;
+}
+
+.timelineHeaderText {
+    font-weight: 400;
+    font-size: clamp(36px, 3vw, 75px);
+    margin-top: 4%;
+
+}
+
+.timelineUnderline {
+    position: relative;
+    width: clamp(180px, 100vw, 20%);
+    margin-top: -6.5vh;
+    aspect-ratio: 1 / 1;
+} 
+
+@media (min-width: 1000px){
+    .timelineUnderline {
+        margin-top: -8.5%;
+    }
+}

@@ -1,0 +1,24 @@
+footer{
+    background-color: #FAA27C;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 170px;
+    padding-bottom: 35px;
+    padding-left: 35px;
+    padding-right: 25px;
+}
+
+.affiliates a{
+    margin-right: 20px;
+}
+
+.socials .icon{
+    width: 100px;
+    height: 100px;
+}
+
+.socials a{
+    font-size: 20px;
+    color: white;
+}
