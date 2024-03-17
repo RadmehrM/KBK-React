@@ -1,163 +1,186 @@
 
-  .location-p {
-    color: var(--fontColor_Dark);
-    font-size: var(--fontSize_Medium);
-    font-family: "Inter";
-  }
-  
-  #container {
-    padding: 40px 0px 90px 0px;
-    row-gap: 40px;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-    align-items: center;
-    background-color: white;
-  }
-  
-  #header {
-    position: relative;
-    height: 140px;
-  }
-  
-  #headerImage {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-  }
-  
-  #headerText {
-    font-size: 2em;
-    font-weight: 600;
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-  }
-  
-  #body {
-    width: 86%;
-    font-weight: 400;
-  }
-  
-  #map {
-    margin-top: 50px;
-    /*height: calc(74vw * 0.546);  /* backup for js dynamic sizing (ratio from figma) */
-    width: 74%;
-    align-items: center;
-    justify-content: center;
-    border: solid;
-    border-width: 1px;
-    border-color: var(--fontColor_Dark);
-    z-index: 2;
-    padding: 3%;
-  }
-  
-  #map-image {
-    background: url("../images/map.png"); /* set map as background image */
-    box-sizing: border-box;
-    background-size: contain;
-    width: 100%;
-    height: 100%;
-  }
-  
-  .ellipse {
-    background-color: #f5f5f5;
-    border-radius: 50%;
-    z-index: 1;
-    position: absolute;
-  }
-  
-  #ellipse-14 {
-    width: 101px;
-    height: 101px;
-  
-    /* change */
-    top: 653px;
-    left: 1400px;
-  }
-  
-  #ellipse-11 {
-    width: 265px;
-    height: 265px;
-  
-    /* change */
-    top: 1319px;
-    left: -49px;
-  }
-  
-  #ellipse-12 {
-    width: 133px;
-    height: 133px;
-  
-    /* change */
-    top: 1156px;
-    left: 125px;
-  }
-  
-  #ellipse-13 {
-    width: 205px;
-    height: 205px;
-  
-    /* change */
-    top: 1072px;
-    left: 1337px;
-  }
-  
-  .marker {
-    max-width: 31.5px;
-    max-height: 45px;
-    position: relative;
-  }
-  
-  #oshawa {
-    left: 14.6%;
-    top: 15%;
-  }
-  
-  #guelph {
-    left: -14%;
-    top: 33%;
-  }
-  
+.location-p {
+  color: var(--fontColor_Dark);
+  font-size: var(--fontSize_Medium);
+  font-family: "Inter";
+}
+
+#container {
+  padding: 40px 0px 90px 0px;
+  row-gap: 40px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  background-color: white;
+}
+
+#header {
+  position: relative;
+  height: 140px;
+}
+
+#headerImage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+#headerText {
+  font-size: 2em;
+  font-weight: 600;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+#body {
+  width: 86%;
+  font-weight: 400;
+}
+
+#map {
+  width: 74%;
+  align-items: center;
+  justify-content: center;
+  border: solid;
+  border-width: 1px;
+  border-color: var(--fontColor_Dark);
+  z-index: 2;
+  padding: 3%;
+}
+
+#map-image {
+  width: 4700px;
+  height: 1800px;
+}
+
+.ellipse {
+  background-color: #f5f5f5;
+  border-radius: 50%;
+  z-index: 1;
+  position: absolute;
+}
+
+#ellipse-14 {
+  width: 101px;
+  height: 101px;
+
+  top: 653px;
+  left: 1400px;
+}
+
+#ellipse-11 {
+  width: 265px;
+  height: 265px;
+
+  top: 1319px;
+  left: -49px;
+}
+
+#ellipse-12 {
+  width: 133px;
+  height: 133px;
+
+  top: 1156px;
+  left: 125px;
+}
+
+#ellipse-13 {
+  width: 205px;
+  height: 205px;
+
+  top: 1072px;
+  left: 1337px;
+}
+
+.marker {
+  position: relative;
+  display: inline;
+  align-items: center;
+}
+
+.marker-image {
+  transform: translateX(-50%);
+  width: 26px;
+  height: 37px;
+}
+
+#toronto {
+  left: -139px;
+  top: 822px;
+}
+
+#london {
+  left: -734px;
+  top: 1105px;
+}
+
+#stcatharines {
+  left: -147px;
+  top: 1043px;
+}
+
+#guelph {
+  left: -480px;
+  top: 870px;
+}
+
+#kingston {
+  left: 648px;
+  top: 578px;
+}
+
+.popup {
+  width: 334px;
+  height: 233px;
+  background-color: white;
+  border-radius: 7px;
+  border: 0.5px solid #00000070;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  z-index: 2;
+  bottom: 0;
+  left: 0;
+  transform: translateX(-50%) translateY(-30%);
+}
+
+.popup-image {
+  height: 75.5%;
+  width: 100%;
+}
+
+.popup-title {
+  color: black;
+  font-weight: 400;
+  size: 24px;
+  line-height: 29.05px;
+}
+
+.learn-more-link {
+  color: #000000ad;
+  size: 18px;
+  line-height: 21.78px;
+}
+
+.polygon {
+  width: 0;
+  height: 0;
+  border-left: 16px solid transparent;
+  border-right: 16px solid transparent;
+  border-top: 44.32px solid white;
+  align-self: center;
+}
+
+@media screen and (max-width: 900px) {
   .popup {
-    width: 334px;
-    height: 233px;
-    background-color: white;
-    position: relative;
-    top: -20%;
-    left: 21%;
-    border-radius: 7px;
-    border: 0.5px solid #00000070;
-    display: flex;
-    flex-direction: column;
+    width: 180px;
+    height: 150px;
+    transform: translateX(-50%) translateY(-50%);
   }
-  
-  .school-image {
-    height: 75.5%;
-    width: 100%;
-  }
-  
-  .school-title {
-    color: black;
-    font-weight: 400;
-    size: 24px;
-    line-height: 29.05px;
-  }
-  
-  .learn-more-link {
-    color: #000000ad;
-    size: 18px;
-    line-height: 21.78px;
-  }
-  
-  .polygon {
-    width: 0;
-    height: 0;
-    border-left: 16px solid transparent;
-    border-right: 16px solid transparent;
-    border-top: 44.32px solid white;
-    align-self: center;
-  }
+
+}
