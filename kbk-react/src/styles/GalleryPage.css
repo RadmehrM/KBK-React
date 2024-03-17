@@ -58,6 +58,22 @@
     margin-top: 10%;
     margin-left: 10%;
   }
+
+  @media screen and (max-width: 1584px) {
+    .photo-collage {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .photo-1,.photo-2,.photo-3,.photo-4,.photo-5,.photo-6,.photo-7{
+      margin-left: 5%;
+      margin-top: 10%;
+      height: 70%;
+      width: 70%;
+    }
+   
   
+  }
   
   
