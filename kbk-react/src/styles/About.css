@@ -124,3 +124,8 @@
         margin-top: -8.5%;
     }
 }
+
+.bold {
+    font-weight: bold;
+    text-align: left;
+}

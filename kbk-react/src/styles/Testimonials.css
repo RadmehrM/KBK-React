@@ -1,115 +1,119 @@
 /* Testimonials.css */
 .testimonial.left-aligned {
+  text-align: left;
+}
+
+
+.testimonial.right-aligned {
+  text-align: right;
+}
+.testimonials {
+    font-family: 'Inter', sans-serif; /* Replace with the actual font from the design */
+    color: black;
+    padding: 4vh 10vh 10vh;
+    margin: 0px auto;
+    background-color: #fff;
+    margin-top: 0px;
+  }
+  
+  .testimonials-header {
+    position: relative; /* positions title text (Testimonials */
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+  
+  .testimonials-header-banner {
+    width: 50%; /* Adjust this as needed to make the banner smaller */
+    height: auto; /* This will maintain the aspect ratio of the image */
+    display: block; /* To ensure it takes up the full width */
+    margin: 0 auto; /* This will center the banner in the container */
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+  
+  /* Styles for the title text (only for Testimonials)*/
+  .testimonials-header h2 {
+    position: absolute; /* Position the text absolutely relative to its positioned parent */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Offset the element by half of its width and height to center */
+    width: 100%; /* Set width to 100% of the parent container */
+    margin: 0; /* Reset margin */
+    /* Your existing styles */
+    font-size: 24px;
+    color: #000000;
+    padding: 0;
+    z-index: 1; /* Ensure the text is above the banner image */
+    
+  }
+  
+  
+  .testimonial {
+    margin-bottom: 0px;
+    margin-top: 0%;
+    text-align: center;
+  }
+  
+  .testimonial:first-child .testimonial-decor {
+    background-image: url('../images/testimonials/ribbon1.png'); 
+  }
+  
+  .testimonial:not(:first-child):not(:last-child) .testimonial-decor {
+    background-image: url('../images/testimonials/ribbon1.png'); 
+  
+  }
+  .testimonial:last-child .testimonial-decor {
+    background-image: url('../images/testimonials/ribbon1.png'); 
+  }
+  
+  .testimonial-title {
+    font-size: 28px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 10000000;
+    margin: 0 0 1px 0;
+    color: #000000;
+    
+  }
+  
+  .testimonial-text {
+    font-family: 'Inter', sans-serif;
+    font-size: 28px;
+    line-height: 1.5;
+    color: #666;
+    margin: 0;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  
+/* Styles for right-aligned testimonial titles */
+.testimonial.right-aligned .testimonial-title {
+  text-align: right;
+}
+
+  .testimonial-image {
+    height: 40px;
+    width: 140px;
+
+  }
+
+  .ribbon-right{
+    text-align: right;
+  }
+  
+  .ribbon-left {
     text-align: left;
   }
   
-  .testimonial.right-aligned {
-    text-align: right;
-  }
-  .testimonials {
-      font-family: 'Arial', sans-serif; /* Replace with the actual font from the design */
-      color: #333;
-      max-width: 800px;
-      margin: 0px auto;
-      padding: 20px;
-      background-color: #fff;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      margin-top: 0px;
-    }
-    
-    .testimonials-header {
-      position: relative; /* positions title text (Testimonials */
-      text-align: center;
-      margin-bottom: 0px;
-      margin-top: 0px;
-    }
-    
-    .testimonials-header-banner {
-      width: 50%; /* Adjust this as needed to make the banner smaller */
-      height: auto; /* This will maintain the aspect ratio of the image */
-      display: block; /* To ensure it takes up the full width */
-      margin: 0 auto; /* This will center the banner in the container */
-      margin-bottom: 0px;
-      margin-top: 0px;
-    }
-    
-    /* Styles for the title text (only for Testimonials)*/
-    .testimonials-header h2 {
-      position: absolute; /* Position the text absolutely relative to its positioned parent */
-      top: 50%; /* Center vertically */
-      left: 50%; /* Center horizontally */
-      transform: translate(-50%, -50%); /* Offset the element by half of its width and height to center */
-      width: 100%; /* Set width to 100% of the parent container */
-      margin: 0; /* Reset margin */
-      /* Your existing styles */
-      font-size: 24px;
-      color: #000000;
-      padding: 0;
-      z-index: 1; /* Ensure the text is above the banner image */
-      
-    }
-    
-    
-    .testimonial {
-      margin-bottom: 0px;
-      margin-top: 0%;
-      text-align: center;
-    }
-    
-    .testimonial:first-child .testimonial-decor {
-      background-image: url('../images/testimonials/ribbon1.png'); 
-    }
-    
-    .testimonial:not(:first-child):not(:last-child) .testimonial-decor {
-      background-image: url('../images/testimonials/ribbon1.png'); 
-    
-    }
-    .testimonial:last-child .testimonial-decor {
-      background-image: url('../images/testimonials/ribbon1.png'); 
-    }
-    
-    .testimonial-title {
-      font-size: 16px;
-      font-family: 'Inter', sans-serif;
-      font-weight: 10000000;
-      margin: 0 0 1px 0;
-      color: #000000;
-      
-    }
-    
-    .testimonial-text {
-      font-family: 'Inter', sans-serif;
-      font-size: 16px;
-      line-height: 1.5;
-      color: #666;
-      margin: 0;
-      margin-top: 0px;
-      margin-bottom: 0px;
-    }
-    
-  /* Styles for right-aligned testimonial titles */
-  .testimonial.right-aligned .testimonial-title {
-    text-align: right;
-  }
-  
+  @media (max-width: 768px) {
+    /* Styles for mobile view */
     .testimonial-image {
-      height: 40px;
-      width: 140px;
+      margin: 10px 0;
+    }
+  }
   
-    }
-  
-    .ribbon-right{
-      text-align: right;
-    }
-    
-    .ribbon-left {
-      text-align: left;
-    }
-    
-    @media (max-width: 768px) {
-      /* Styles for mobile view */
-      .testimonial-image {
-        margin: 10px 0;
-      }
-    }
-    
+
+.testimonials #header{
+font-family: "Inter" !important;
+padding-bottom: vh !important;
+}

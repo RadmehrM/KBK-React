@@ -4,12 +4,12 @@ import Location from './components/Location.js';
 import Home from './components/Home.js'
 import Team from './components/Team.js'
 import React from "react";
+import Footer from './components/Footer.js'
 import {
     Routes,
     Route,
 } from "react-router-dom";
 import Navbar from './parts/Navbar.js';
-import Footer from './components/Footer.js';
 import GalleryPage from './components/GalleryPage.js';
 import ContactUs from './components/ContactUs.js';
 import Testimonials from './components/Testimonials.js';
@@ -32,8 +32,9 @@ function App() {
 
 
           </Routes>
-          <Footer/>
+          
       </div>
+      <Footer />
       </div>      
     );
 }

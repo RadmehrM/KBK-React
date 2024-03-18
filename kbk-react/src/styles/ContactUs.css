@@ -1,5 +1,5 @@
 .contact-container {
-  margin: 5rem 10rem 5rem 10rem;
+  margin: 0rem 10rem 5rem 10rem;
   display: grid;
   grid-template-columns: auto, auto, 1fr;
   grid-template-rows: auto, auto, auto, auto, 1fr;
@@ -24,7 +24,7 @@
 span,
 label {
   font-weight: 400;
-  size: 24px;
+  font-size: 24px;
   line-height: 29.05px;
 }
 
@@ -66,8 +66,8 @@ form {
   grid-column: 1 / 4;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto auto 1fr;
-  grid-column-gap: 4rem;
-  grid-row-gap: 1rem;
+  grid-column-gap: 7rem;
+  grid-row-gap: 2rem;
 }
 
 .first-name {
@@ -100,7 +100,7 @@ button#submit {
   background-color: #ff6b00;
   color: white;
   font-weight: 500;
-  size: 24px;
+  font-size: 24px;
   line-height: 29.05px;
   border: none;
   cursor: pointer;
@@ -155,4 +155,9 @@ input textarea {
     display: flex;
     flex-direction: column;
   }
+}
+
+.input-box{
+  height: 50px;
+  font-size: 24px;
 }
