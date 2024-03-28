@@ -22,3 +22,16 @@ footer{
     font-size: 20px;
     color: white;
 }
+
+
+
+.affiliates a{
+    margin-right: 20px;
+}
+
+.socials {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  

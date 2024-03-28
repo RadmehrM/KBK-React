@@ -38,7 +38,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 90vh;
+    height: 60vh;
     background-image: url(../images/kelly-sikkema-xLA0FyK2nyA-unsplash.jpg);
     background-size:cover;
     display: flex;
@@ -378,3 +378,234 @@
     border-radius: 25px;
     
   }
+
+
+
+  /* Adjustments for Mobile Devices */
+@media screen and (max-width: 768px) {
+  .navBar {
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+  }
+  
+  .KBKLOGO {
+    height: 150px; /* Adjust height */
+  }
+  
+  .headline {
+    width: 80%; /* Adjust width */
+    text-align: center;
+  }
+  
+  .headline p {
+    font-size: 30px; /* Decrease font size */
+  }
+
+  .mission {
+    height: auto; /* Auto height */
+    padding: 2em; /* Add padding */
+    text-align: center;
+  }
+  
+  .mission-title {
+    width: 80%; /* Adjust width */
+  }
+  
+  .mission h1 {
+    font-size: 2.5em; /* Decrease font size */
+  }
+  
+  .mission .mission-box p {
+    font-size: 1.2em; /* Decrease font size */
+  }
+  
+  .gallery {
+    height: auto; /* Auto height */
+    padding: 4%; /* Adjust padding */
+  }
+  
+  .gallery .col-left-col img {
+    height: auto; /* Auto height */
+    max-width: 100%; /* Ensure image doesn't overflow */
+  }
+  
+  .gallery .image-gallery img {
+    width: 100%; /* Take full width */
+    height: auto; /* Auto height */
+  }
+  
+  .howItWorks {
+    flex-direction: column;
+    height: auto; /* Auto height */
+    padding: 2em; /* Adjust padding */
+  }
+  
+  .howItWorks .col-text,
+  .howItWorks .col-img {
+    width: 100%; /* Take full width */
+    text-align: center; /* Center text */
+  }
+  
+  .howItWorks .col-text h1 {
+    font-size: 2em; /* Decrease font size */
+  }
+  
+  .howItWorks .col-img img {
+    max-width: 100%; /* Ensure image doesn't overflow */
+    height: auto; /* Auto height */
+  }
+  
+  .ourPartners {
+    padding: 2em; /* Adjust padding */
+    flex-direction: column;
+    gap: 2em;
+  }
+  
+  .wrap-grid-container {
+    width: 100%; /* Take full width */
+  }
+  
+  .divider,
+  .partnersDivider {
+    width: 100%; /* Take full width */
+  }
+}
+
+  
+@media screen and (max-width: 1024px) {
+  .navBar, .howItWorks, .ourPartners {
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+  }
+
+  .KBKLOGO {
+    height: 175px; /* Adjust for tablet */
+  }
+
+  .headline, .mission-title {
+    width: 90%;
+  }
+
+  .headline p, .mission h1, .mission .mission-box p, .howItWorks .col-text h1 {
+    font-size: 1.5em; /* Adjust for tablet */
+  }
+
+  .mission, .gallery, .howItWorks {
+    padding: 3%;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .navBar {
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+  }
+  
+  .KBKLOGO {
+    height: 150px; /* Adjust for mobile */
+  }
+  
+  .headline {
+    width: 80%;
+    text-align: center;
+  }
+  
+  .headline p {
+    font-size: 30px; /* Adjust for mobile */
+  }
+
+  .stat-content {
+    font-size: 0.75em;
+  }
+
+.stat-title {
+  font-size: 2em;
+}
+
+  .stat {
+    height: 70%;
+  }
+
+  .main-stat-group p {
+    font-size: 1.5em;
+  }
+  .mission {
+    height: auto;
+    padding: 2em;
+    text-align: center;
+  }
+  
+  .mission-title {
+    width: 60%;
+  }
+  
+  .mission h1 {
+    font-size: 1.5em; /* Adjust for mobile */
+  }
+  
+  .mission .mission-box p {
+    font-size: 0.8em; /* Adjust for mobile */
+  }
+  
+  .gallery , .gallery-header {
+    display: none;
+  
+  }
+
+
+  .title {
+    display: none;
+  }
+  
+  .howItWorks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;  }
+
+  .col-text .kidsHeader2 {
+    font-size: 40px;
+    padding-left: 0 !important;
+  }
+  .col-text .kidsText {
+    
+    padding: 4% !important;
+  }
+  
+  .howItWorks .col-text,
+  .howItWorks .col-img {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .howItWorks .col-text h1 {
+    font-size: 1em; /* Adjust for mobile */
+  }
+  
+  .howItWorks .col-img img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .ourPartners {
+    padding: 2em;
+    flex-direction: column;
+    gap: 2em;
+  }
+  
+  .wrap-grid-container {
+    width: 100%;
+  }
+  
+  .divider,
+  .partnersDivider {
+    width: 100%;
+  }
+}
