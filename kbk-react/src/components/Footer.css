@@ -19,3 +19,34 @@ footer{
     align-items: center;
 }
   
+
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    footer {
+        padding-top: 100px; /* Adjust padding for smaller screens */
+        padding-bottom: 20px; /* Adjust padding for smaller screens */
+        padding-left: 20px; /* Adjust padding for smaller screens */
+        padding-right: 20px; /* Adjust padding for smaller screens */
+    }
+
+    .affiliates a {
+        margin-right: 10px; /* Adjust margin for smaller screens */
+    }
+
+    .affiliates img {
+        width: 50px; /* Reduce image size for smaller screens */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .socials a {
+        font-size: 12px; /* Reduce font size for smaller screens */
+        margin-right: 10px; /* Adjust margin for smaller screens */
+    }
+
+    .socials .SocialIcon {
+        width: 50px !important; /* Reduce social icon size for smaller screens */
+        height: auto !important; /* Maintain aspect ratio */
+        color: red;
+    }
+}

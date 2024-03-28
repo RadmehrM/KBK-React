@@ -13,17 +13,12 @@ footer{
     margin-right: 20px;
 }
 
-.socials .icon{
-    width: 100px;
-    height: 100px;
-}
+
 
 .socials a{
     font-size: 20px;
     color: white;
 }
-
-
 
 .affiliates a{
     margin-right: 20px;
@@ -35,3 +30,54 @@ footer{
     align-items: center;
 }
   
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    footer {
+        padding-top: 80px; /* Adjust padding for smaller screens */
+        padding-bottom: 20px; /* Adjust padding for smaller screens */
+        padding-left: 20px; /* Adjust padding for smaller screens */
+        padding-right: 20px; /* Adjust padding for smaller screens */
+    }
+
+    .affiliates a {
+        margin-right: 10px; /* Adjust margin for smaller screens */
+    }
+
+    .affiliates img {
+        width: 50px; /* Reduce image size for smaller screens */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .socials a {
+        font-size: 12px; /* Reduce font size for smaller screens */
+        margin-right: 10px; /* Adjust margin for smaller screens */
+    }
+
+}
+
+/* Media query for smaller screens */
+@media (max-width: 450px) {
+    footer {
+        padding-top: 50px; /* Adjust padding for smaller screens */
+        padding-bottom: 20px; /* Adjust padding for smaller screens */
+        padding-left: 20px; /* Adjust padding for smaller screens */
+        padding-right: 10px; /* Adjust padding for smaller screens */
+    }
+
+    .affiliates a {
+        margin-right: 5px; /* Adjust margin for smaller screens */
+    }
+
+    .affiliates img {
+        width: 25px; /* Reduce image size for smaller screens */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .socials a {
+        font-size: 9px; /* Reduce font size for smaller screens */
+         
+        
+    }
+
+}
