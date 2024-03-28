@@ -24,7 +24,7 @@ function Home() {
        <div className="startBanner">
        <div className="box"></div>
        <div className="headline">
-           <p>Small Catchy Headline To Introduce your Service</p>
+           <p>We Share, Everyone Plays</p>
        </div>
        </div>
        <div className="mission">
