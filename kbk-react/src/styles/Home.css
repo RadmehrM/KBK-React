@@ -168,7 +168,7 @@
     font-weight: 700;
   }
   .stat-content {
-    padding: 5%;
+    padding: 9%;
     color: white;
     font-size: 1.45em;
   }
@@ -186,7 +186,9 @@
   }
   
   .main-stat-group p {
-    font-size: 2em;
+    font-size: 2.3em;
+    padding: 5%;
+    border:#FF6B00 solid 4px;
   }
 
   .gallery {
@@ -274,7 +276,7 @@
     
   }
   .col-left p{
-    font-size: 24px;
+    font-size: 34px;
   }
   
   .col-text .kidsHeader2{
@@ -284,6 +286,7 @@
     padding-left: 146px !important;
   }
   .col-text .kidsText{
+    font-size: 20px;
     padding-left: 203px !important;
     padding-right: 97px;
   }
@@ -387,33 +390,31 @@
     flex-direction: column;
     align-items: center;
     gap: 1em;
+    margin-bottom: -100px;
+    z-index: 2;
   }
   
   .KBKLOGO {
     height: 150px; /* Adjust height */
   }
   
-  .headline {
-    width: 80%; /* Adjust width */
-    text-align: center;
-  }
-  
-  .headline p {
-    font-size: 30px; /* Decrease font size */
-  }
+  .startBanner{
+    display: none;
 
+  }
   .mission {
+    margin-top: -10px;
     height: auto; /* Auto height */
     padding: 2em; /* Add padding */
     text-align: center;
   }
   
   .mission-title {
-    width: 80%; /* Adjust width */
+    width: 60%; /* Adjust width */
   }
   
   .mission h1 {
-    font-size: 2.5em; /* Decrease font size */
+    font-size: 3em; /* Decrease font size */
   }
   
   .mission .mission-box p {
