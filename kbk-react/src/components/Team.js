@@ -30,10 +30,7 @@ const TeamSection = () => {
         />
       ))}
 
-      <div className={styles.additionalImageContainer}>
-        <img className={styles.additionalElement} alt="Decorative element" src={elementImage} />
-        <div className={styles.rectangle}></div>
-      </div>
+      
     </section>
   );
 };
